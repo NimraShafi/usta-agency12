@@ -1,0 +1,38 @@
+/* Keyframes for left-moving lines */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframes for right-moving lines */
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Line animations */
+.line1, .line3 {
+  display: flex;
+  gap: 8rem;
+  animation: moveLeft 20s linear infinite;
+}
+
+.line2 {
+  display: flex;
+  gap: 8rem;
+  animation: moveRight 20s linear infinite;
+}
+
+/* Add optional styles to make scrolling smoother */
+.flex {
+  overflow: hidden;
+  white-space: nowrap;
+}

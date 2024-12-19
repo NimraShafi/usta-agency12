@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Dark background */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  overflow: hidden; /* Prevent any elements from overflowing the viewport */
+}
+.count-display p {
+  font-size: 18px;
+  font-weight:0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+}
+
+
+.letter {
+  display: inline-block;
+  opacity: 1; 
+  transform: translateY(0); 
+  animation: fallAnimation 1.3s ease forwards; 
+}
+
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+  30% {
+    transform: translateY(-20px); 
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px); 
+    opacity: 0; 
+  }
+}

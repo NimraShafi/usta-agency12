@@ -1,0 +1,108 @@
+/* Contact.css */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px;
+  color: white;
+  margin-top: 10px;
+  background: black;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.contact-column {
+  width: 100%; /* Full width for small screens */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.contact-column2 {
+  width: 100%; /* Full width for small screens */
+}
+
+.column-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 10px 0;
+}
+
+.column-separator {
+  border: 0;
+  height: 1px;
+  background: rgba(169, 169, 169, 0.2);
+}
+
+.column-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.column-subsection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Adjust spacing between sections for small screens */
+}
+
+.copyright-notice {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  padding: 10px 0;
+}
+
+/* Responsive Styles */
+
+/* Small screens (max-width: 580px) */
+@media (max-width: 580px) {
+  .contact-column {
+    width: 100%; /* Each column takes full width */
+  }
+
+  .contact-column2 {
+    width: 100%; /* Full width for agencies */
+  }
+
+  .column-subsection {
+    gap: 20px; /* Reduced gap for small screens */
+  }
+}
+
+/* Medium screens (min-width: 581px and max-width: 1023px) */
+@media (min-width: 581px) and (max-width: 1023px) {
+  .contact-column {
+    width: 45%; /* Split columns for medium screens */
+  }
+
+  .contact-column2 {
+    width: 50%; /* Agencies column gets more space */
+  }
+
+  .column-subsection {
+    gap: 40px; /* Spacing for subsections */
+  }
+}
+
+/* Large screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .contact-container {
+    justify-content: space-between; /* Adjust alignment for large screens */
+  }
+
+  .contact-column {
+    width: 30%; /* Layout for larger screens */
+  }
+
+  .contact-column2 {
+    width: 60%;
+  }
+
+  .column-subsection {
+    gap: 180px; /* Larger gaps for spacious layout */
+  }
+}

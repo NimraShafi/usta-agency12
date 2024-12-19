@@ -1,0 +1,37 @@
+.marquee-w {
+  display: block;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+.marquee {
+  position: absolute;
+  display: block;
+  margin: auto auto;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+  
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  animation: marquee 12s linear infinite;
+  letter-spacing: 6px;
+}
+.marquee2 span {
+  animation-delay: 6s;
+}
+@keyframes marquee {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-100%, 0);
+  }
+}
